@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="学号（唯一标识符，不可空）" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Y1a-UB-Wpe">
+                                <rect key="frame" x="22" y="28" width="200" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="fWm-0P-yuO"/>
+                                    <constraint firstAttribute="height" constant="30" id="if1-xe-1rX"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="姓名（不可空）" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YKb-UP-tXV">
+                                <rect key="frame" x="22" y="74" width="150" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="2i0-KG-qee"/>
+                                    <constraint firstAttribute="width" constant="150" id="4s5-mt-syH"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="性别（不可空）" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uZ5-ar-ofG">
+                                <rect key="frame" x="22" y="124" width="150" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="iNR-C9-oEl"/>
+                                    <constraint firstAttribute="height" constant="30" id="ldj-O2-Cml"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="年龄" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="egF-2w-7Ci">
+                                <rect key="frame" x="22" y="170" width="150" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Eb6-h7-U3n"/>
+                                    <constraint firstAttribute="width" constant="150" id="avq-xo-Oxa"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="身高" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4he-3M-nuJ">
+                                <rect key="frame" x="22" y="224" width="150" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="FYR-8Y-WQS"/>
+                                    <constraint firstAttribute="width" constant="150" id="lCx-OV-Aaf"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QKY-Iu-oTH">
+                                <rect key="frame" x="16" y="309" width="76" height="30"/>
+                                <color key="backgroundColor" red="0.95300155910820661" green="0.95502982169527373" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="VPR-Yy-8Tx"/>
+                                    <constraint firstAttribute="width" constant="76" id="gqC-uS-ANk"/>
+                                </constraints>
+                                <state key="normal" title="插入数据"/>
+                                <connections>
+                                    <action selector="insertStudentData:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UMQ-k2-Y4B"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NqY-Ls-K9v">
+                                <rect key="frame" x="16" y="410" width="76" height="30"/>
+                                <color key="backgroundColor" red="0.95300155909999995" green="0.95502982169999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="8Da-WG-CFx"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="L7C-hn-YhW"/>
+                                    <constraint firstAttribute="width" constant="76" id="P9g-9L-SLX"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="76" id="cLl-OA-guU"/>
+                                </constraints>
+                                <state key="normal" title="创建表"/>
+                                <connections>
+                                    <action selector="createTable:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qAU-bZ-AZd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4at-Wm-Fbh">
+                                <rect key="frame" x="16" y="475" width="76" height="30"/>
+                                <color key="backgroundColor" red="0.95300155909999995" green="0.95502982169999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="jXu-aE-uK3"/>
+                                    <constraint firstAttribute="width" constant="76" id="yTi-Sh-e5n"/>
+                                </constraints>
+                                <state key="normal" title="增加字段"/>
+                                <connections>
+                                    <action selector="addFieldForTable:" destination="BYZ-38-t0r" eventType="touchUpInside" id="daM-vy-Fso"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="13A-Br-zF2">
+                                <rect key="frame" x="107" y="475" width="76" height="30"/>
+                                <color key="backgroundColor" red="0.95300155909999995" green="0.95502982169999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="bbW-Vp-aWi"/>
+                                    <constraint firstAttribute="width" constant="76" id="tWO-bm-4cZ"/>
+                                </constraints>
+                                <state key="normal" title="修改字段"/>
+                                <connections>
+                                    <action selector="modifyField:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jf6-C4-wVx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dg6-S3-CLe">
+                                <rect key="frame" x="123" y="410" width="76" height="30"/>
+                                <color key="backgroundColor" red="0.95300155909999995" green="0.95502982169999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="1Oe-jc-5fw"/>
+                                    <constraint firstAttribute="width" constant="76" id="sHD-Q8-Gx5"/>
+                                </constraints>
+                                <state key="normal" title="删除表"/>
+                                <connections>
+                                    <action selector="deleteTable:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Il0-1g-TFw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9MG-Vi-NgN">
+                                <rect key="frame" x="100" y="309" width="76" height="30"/>
+                                <color key="backgroundColor" red="0.95300155909999995" green="0.95502982169999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="76" id="BVi-Va-nSc"/>
+                                    <constraint firstAttribute="height" constant="30" id="UDa-eA-bG6"/>
+                                </constraints>
+                                <state key="normal" title="查看"/>
+                                <connections>
+                                    <action selector="searchStudentData:" destination="BYZ-38-t0r" eventType="touchUpInside" id="w5f-Sb-vml"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lxp-o6-TV0">
+                                <rect key="frame" x="184" y="309" width="76" height="30"/>
+                                <color key="backgroundColor" red="0.95300155909999995" green="0.95502982169999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="3Gs-Rn-aNV"/>
+                                    <constraint firstAttribute="width" constant="76" id="EY3-3S-RfQ"/>
+                                </constraints>
+                                <state key="normal" title="修改"/>
+                                <connections>
+                                    <action selector="modifyStudentInfo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1im-Dq-irV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jVX-pr-fHk">
+                                <rect key="frame" x="274" y="309" width="76" height="30"/>
+                                <color key="backgroundColor" red="0.95300155909999995" green="0.95502982169999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="76" id="77v-LS-JgB"/>
+                                    <constraint firstAttribute="height" constant="30" id="fB1-Jq-eJk"/>
+                                </constraints>
+                                <state key="normal" title="删除"/>
+                                <connections>
+                                    <action selector="deleteStudentInfo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lBi-JP-1YV"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="提示标签：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PmZ-CV-yE9">
+                                <rect key="frame" x="22" y="272" width="71.5" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="---" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ue-au-ffM">
+                                <rect key="frame" x="107" y="272" width="243" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="243" id="FKi-dx-SF8"/>
+                                    <constraint firstAttribute="height" constant="21" id="L6j-GN-0rZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="1" green="0.050352048769999998" blue="0.15477207849999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vEn-Z0-Zuk">
+                                <rect key="frame" x="230" y="28" width="65" height="30"/>
+                                <color key="backgroundColor" red="0.9860498820390754" green="1" blue="0.6289046750618974" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="GhY-Ig-fze"/>
+                                    <constraint firstAttribute="width" constant="65" id="MGz-VI-ZTK"/>
+                                </constraints>
+                                <state key="normal" title="修改">
+                                    <color key="titleColor" red="1" green="0.050352048769999998" blue="0.15477207849999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="modifyStudentNumber:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BIs-eN-2qN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="big-8u-BP6">
+                                <rect key="frame" x="230" y="73" width="65" height="30"/>
+                                <color key="backgroundColor" red="0.98604988199999999" green="1" blue="0.62890467510000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="uhD-y1-UVR"/>
+                                    <constraint firstAttribute="width" constant="65" id="zoT-mn-plU"/>
+                                </constraints>
+                                <state key="normal" title="修改">
+                                    <color key="titleColor" red="1" green="0.050352048769999998" blue="0.15477207849999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="modifyStudentName:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VQ1-jG-3xu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1cE-9b-7Ni">
+                                <rect key="frame" x="230" y="124" width="65" height="30"/>
+                                <color key="backgroundColor" red="0.98604988199999999" green="1" blue="0.62890467510000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Pgi-N5-8eG"/>
+                                    <constraint firstAttribute="width" constant="65" id="T2R-0X-ORA"/>
+                                </constraints>
+                                <state key="normal" title="修改">
+                                    <color key="titleColor" red="1" green="0.050352048769999998" blue="0.15477207849999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="modifyStudentGender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IDT-Yj-m4N"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JCB-n1-S6h">
+                                <rect key="frame" x="230" y="170" width="65" height="30"/>
+                                <color key="backgroundColor" red="0.98604988199999999" green="1" blue="0.62890467510000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Yg4-00-NjZ"/>
+                                    <constraint firstAttribute="width" constant="65" id="m9U-4s-wD4"/>
+                                </constraints>
+                                <state key="normal" title="修改">
+                                    <color key="titleColor" red="1" green="0.050352048769999998" blue="0.15477207849999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="modifyStudentAge:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VVU-dZ-nNT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F8s-dQ-aCA">
+                                <rect key="frame" x="230" y="224" width="65" height="30"/>
+                                <color key="backgroundColor" red="0.98604988199999999" green="1" blue="0.62890467510000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="ODp-uj-eoD"/>
+                                    <constraint firstAttribute="width" constant="65" id="elb-2R-Y2S"/>
+                                </constraints>
+                                <state key="normal" title="修改">
+                                    <color key="titleColor" red="1" green="0.050352048769999998" blue="0.15477207849999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="modifyStudentHeight:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i3Q-xw-VGj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zYi-ij-gjG">
+                                <rect key="frame" x="214.5" y="267" width="120" height="30"/>
+                                <color key="backgroundColor" red="0.82519359979284879" green="1" blue="0.78940005174507744" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="dbT-VD-6b9"/>
+                                    <constraint firstAttribute="width" constant="120" id="tsI-VG-Pcg"/>
+                                </constraints>
+                                <state key="normal" title="清空所有输入框"/>
+                                <connections>
+                                    <action selector="clearAllTextFieldContent:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bU3-by-O0d"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="以下是对针表的一些操作" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hh8-HO-N1j">
+                                <rect key="frame" x="22" y="366" width="191" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DdV-gM-65y">
+                                <rect key="frame" x="198" y="475" width="76" height="30"/>
+                                <color key="backgroundColor" red="0.95300155909999995" green="0.95502982169999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="8fM-Vp-9id"/>
+                                    <constraint firstAttribute="width" constant="76" id="Ffq-Cz-R3S"/>
+                                </constraints>
+                                <state key="normal" title="删除字段"/>
+                                <connections>
+                                    <action selector="deleteFieldForTable:" destination="BYZ-38-t0r" eventType="touchUpInside" id="olv-Pb-brr"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Y1a-UB-Wpe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="6" id="1K4-Q3-iWT"/>
+                            <constraint firstItem="Dg6-S3-CLe" firstAttribute="top" secondItem="hh8-HO-N1j" secondAttribute="bottom" constant="23" id="29i-wu-jKc"/>
+                            <constraint firstItem="PmZ-CV-yE9" firstAttribute="top" secondItem="4he-3M-nuJ" secondAttribute="bottom" constant="18" id="3lV-nx-Ac8"/>
+                            <constraint firstItem="JCB-n1-S6h" firstAttribute="leading" secondItem="egF-2w-7Ci" secondAttribute="trailing" constant="58" id="5qP-eu-9l2"/>
+                            <constraint firstItem="zYi-ij-gjG" firstAttribute="leading" secondItem="PmZ-CV-yE9" secondAttribute="trailing" constant="121" id="68b-RQ-XXN"/>
+                            <constraint firstItem="hh8-HO-N1j" firstAttribute="top" secondItem="Lxp-o6-TV0" secondAttribute="bottom" constant="27" id="6d3-VY-7Ey"/>
+                            <constraint firstItem="egF-2w-7Ci" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="6" id="94b-KB-ZQ5"/>
+                            <constraint firstItem="9ue-au-ffM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="91" id="9SD-Op-tqB"/>
+                            <constraint firstItem="4at-Wm-Fbh" firstAttribute="top" secondItem="NqY-Ls-K9v" secondAttribute="bottom" constant="35" id="A35-0N-Au2"/>
+                            <constraint firstItem="9ue-au-ffM" firstAttribute="top" secondItem="4he-3M-nuJ" secondAttribute="bottom" constant="18" id="Cv0-fc-Irj"/>
+                            <constraint firstItem="YKb-UP-tXV" firstAttribute="top" secondItem="Y1a-UB-Wpe" secondAttribute="bottom" constant="16" id="Cvw-ch-fWk"/>
+                            <constraint firstItem="PmZ-CV-yE9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="6" id="Dlv-g4-3Zw"/>
+                            <constraint firstItem="QKY-Iu-oTH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="E6e-yn-0u7"/>
+                            <constraint firstItem="uZ5-ar-ofG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="6" id="EIU-Rs-xFm"/>
+                            <constraint firstItem="NqY-Ls-K9v" firstAttribute="top" secondItem="hh8-HO-N1j" secondAttribute="bottom" constant="23" id="GQN-WJ-Tod"/>
+                            <constraint firstItem="Y1a-UB-Wpe" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="NS1-CO-QTb"/>
+                            <constraint firstItem="F8s-dQ-aCA" firstAttribute="leading" secondItem="4he-3M-nuJ" secondAttribute="trailing" constant="58" id="PV6-it-b2k"/>
+                            <constraint firstItem="DdV-gM-65y" firstAttribute="leading" secondItem="13A-Br-zF2" secondAttribute="trailing" constant="15" id="Rpc-CC-Rmw"/>
+                            <constraint firstItem="Lxp-o6-TV0" firstAttribute="leading" secondItem="9MG-Vi-NgN" secondAttribute="trailing" constant="8" id="Rtb-rK-oZX"/>
+                            <constraint firstItem="JCB-n1-S6h" firstAttribute="top" secondItem="1cE-9b-7Ni" secondAttribute="bottom" constant="16" id="WCL-nP-hqC"/>
+                            <constraint firstItem="F8s-dQ-aCA" firstAttribute="top" secondItem="JCB-n1-S6h" secondAttribute="bottom" constant="24" id="WRZ-rc-t4x"/>
+                            <constraint firstItem="9MG-Vi-NgN" firstAttribute="top" secondItem="4he-3M-nuJ" secondAttribute="bottom" constant="55" id="X5b-Lp-q64"/>
+                            <constraint firstItem="13A-Br-zF2" firstAttribute="top" secondItem="Dg6-S3-CLe" secondAttribute="bottom" constant="35" id="Xhh-9F-1En"/>
+                            <constraint firstItem="uZ5-ar-ofG" firstAttribute="top" secondItem="YKb-UP-tXV" secondAttribute="bottom" constant="20" id="Xux-oe-u4t"/>
+                            <constraint firstItem="1cE-9b-7Ni" firstAttribute="leading" secondItem="uZ5-ar-ofG" secondAttribute="trailing" constant="58" id="cUF-2Z-PKd"/>
+                            <constraint firstItem="vEn-Z0-Zuk" firstAttribute="leading" secondItem="Y1a-UB-Wpe" secondAttribute="trailing" constant="8" id="dBb-fT-ohq"/>
+                            <constraint firstItem="NqY-Ls-K9v" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="gUP-4Z-MLt"/>
+                            <constraint firstItem="DdV-gM-65y" firstAttribute="top" secondItem="hh8-HO-N1j" secondAttribute="bottom" constant="88" id="h7R-E2-OfB"/>
+                            <constraint firstItem="zYi-ij-gjG" firstAttribute="top" secondItem="F8s-dQ-aCA" secondAttribute="bottom" constant="13" id="hAH-rx-cpA"/>
+                            <constraint firstItem="9MG-Vi-NgN" firstAttribute="leading" secondItem="QKY-Iu-oTH" secondAttribute="trailing" constant="8" id="hPz-kZ-Hok"/>
+                            <constraint firstItem="jVX-pr-fHk" firstAttribute="leading" secondItem="Lxp-o6-TV0" secondAttribute="trailing" constant="14" id="hdY-5o-SNK"/>
+                            <constraint firstItem="egF-2w-7Ci" firstAttribute="top" secondItem="uZ5-ar-ofG" secondAttribute="bottom" constant="16" id="iVF-Bf-ux6"/>
+                            <constraint firstItem="Lxp-o6-TV0" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="289" id="jY2-hy-sSJ"/>
+                            <constraint firstItem="4at-Wm-Fbh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="kMY-bc-ozs"/>
+                            <constraint firstItem="Dg6-S3-CLe" firstAttribute="leading" secondItem="NqY-Ls-K9v" secondAttribute="trailing" constant="31" id="kek-0t-k6M"/>
+                            <constraint firstItem="13A-Br-zF2" firstAttribute="leading" secondItem="4at-Wm-Fbh" secondAttribute="trailing" constant="15" id="lcM-He-c0l"/>
+                            <constraint firstItem="big-8u-BP6" firstAttribute="top" secondItem="vEn-Z0-Zuk" secondAttribute="bottom" constant="15" id="pbo-6v-aaC"/>
+                            <constraint firstItem="big-8u-BP6" firstAttribute="leading" secondItem="YKb-UP-tXV" secondAttribute="trailing" constant="58" id="qZ8-lX-10f"/>
+                            <constraint firstItem="jVX-pr-fHk" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="289" id="qZz-vE-7NZ"/>
+                            <constraint firstItem="YKb-UP-tXV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="6" id="s11-di-cCX"/>
+                            <constraint firstItem="QKY-Iu-oTH" firstAttribute="top" secondItem="4he-3M-nuJ" secondAttribute="bottom" constant="55" id="vXH-RS-jJg"/>
+                            <constraint firstItem="4he-3M-nuJ" firstAttribute="top" secondItem="egF-2w-7Ci" secondAttribute="bottom" constant="24" id="xdj-WV-3xZ"/>
+                            <constraint firstItem="hh8-HO-N1j" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="6" id="xvn-cQ-Q1z"/>
+                            <constraint firstItem="1cE-9b-7Ni" firstAttribute="top" secondItem="big-8u-BP6" secondAttribute="bottom" constant="21" id="zXR-ZA-cIT"/>
+                            <constraint firstItem="vEn-Z0-Zuk" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="zyJ-yM-xqE"/>
+                            <constraint firstItem="4he-3M-nuJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="6" id="zyV-Sd-LAz"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="studentAgeTf" destination="egF-2w-7Ci" id="DVd-Ca-6Wg"/>
+                        <outlet property="studentGenderTf" destination="uZ5-ar-ofG" id="Mw9-zZ-IKH"/>
+                        <outlet property="studentHeightTf" destination="4he-3M-nuJ" id="AOy-Vx-qYr"/>
+                        <outlet property="studentNameTf" destination="YKb-UP-tXV" id="AlV-er-eJk"/>
+                        <outlet property="studentNumberTf" destination="Y1a-UB-Wpe" id="lh1-sb-EiN"/>
+                        <outlet property="tipLabel" destination="9ue-au-ffM" id="iGA-xK-vh4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
+        </scene>
+    </scenes>
+</document>
